@@ -1,0 +1,6 @@
+# http request and parsing stuff
+requests
+BeautifulSoup4
+
+# captcha stuff
+pillow
