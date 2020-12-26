@@ -43,5 +43,5 @@ def main():
     print(format_table(grade['courses']))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
