@@ -42,10 +42,9 @@ def main():
         Place.PeiYangYuanBadminton7, Place.PeiYangYuanBadminton8,
     ]
     tasks = [
-        {'time': time, 'place': place}
+        {**default_task, 'time': time, 'place': place}
         for time, place in product(times, places)
     ]
-    tasks = [{**default_task, **task} for task in tasks]
 
     booked_times = set()
     booked_indices = set()
@@ -76,5 +75,5 @@ def main():
             break
     print(f'\nBooked indices: {", ".join(str(i) for i in booked_indices) or "none"}.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
